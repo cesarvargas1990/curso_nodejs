@@ -1,0 +1,1 @@
+# Archivos generados por la app
