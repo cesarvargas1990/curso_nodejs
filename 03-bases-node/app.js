@@ -16,7 +16,7 @@ let base = argv.base
 let limite = argv.lm
 let mostrar = argv.l
 tabla(base,limite,mostrar).then((s)=>{
-    hacerArchivo(`tabla-${base}.txt`,s)
+    hacerArchivo(`./salida/tabla-${base}.txt`,s)
 })
 
 
