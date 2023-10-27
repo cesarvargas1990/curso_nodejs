@@ -5,7 +5,7 @@ const Usuario = require('../models/usuario');
 
 
 const validarJWT = async( req = request, res = response, next ) => {
-console.log ("aca jwt")
+
     const token = req.header('x-token');
 
     if ( !token ) {
