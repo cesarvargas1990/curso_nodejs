@@ -1,0 +1,364 @@
+{
+	"info": {
+		"_postman_id": "027f56d0-7dd2-413c-a368-47ba61e4ce3c",
+		"name": "curso nodejs udemy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15019802"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/usuarios",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/119.0"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 1eyJhbGciOiJIUzI1NiJ9.eyJhdXRob3JpdGllcyI6Ilt7XCJhdXRob3JpdHlcIjpcIlJPTEVfQURNSU5cIn1dIiwiaXNBZG1pbiI6dHJ1ZSwidXNlcm5hbWUiOiJjZXNhcnZhciIsInN1YiI6ImNlc2FydmFyIiwiaWF0IjoxNjk5NjU0Mzc5LCJleHAiOjE2OTk2NTc5Nzl9.vnsafIVDp7dgn_T87MTcNbKlNgQKSUogfIRsMTe8imA"
+					},
+					{
+						"key": "Origin",
+						"value": "http://localhost:5173"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Referer",
+						"value": "http://localhost:5173/",
+						"disabled": true
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors",
+						"disabled": true
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/usuarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/usuarios",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\": \"cesar vargas\",\n    \"password\": \"123456\",\n    \"correo\": \"cesara.vargas1990@gmail.com\",\n    \"rol\": \"ADMIN_ROLE\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/usuarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/auth/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/119.0"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 1eyJhbGciOiJIUzI1NiJ9.eyJhdXRob3JpdGllcyI6Ilt7XCJhdXRob3JpdHlcIjpcIlJPTEVfQURNSU5cIn1dIiwiaXNBZG1pbiI6dHJ1ZSwidXNlcm5hbWUiOiJjZXNhcnZhciIsInN1YiI6ImNlc2FydmFyIiwiaWF0IjoxNjk5NjU0Mzc5LCJleHAiOjE2OTk2NTc5Nzl9.vnsafIVDp7dgn_T87MTcNbKlNgQKSUogfIRsMTe8imA"
+					},
+					{
+						"key": "Origin",
+						"value": "http://localhost:5173"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Referer",
+						"value": "http://localhost:5173/",
+						"disabled": true
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors",
+						"disabled": true
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"correo\":\"cesara.vargas1990@gmail.com\",\"password\":\"123456\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/usuarios",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\": \"cesar vargas\",\n    \"password\": \"123456\",\n    \"correo\": \"cesara.vargas1990@gmail.com\",\n    \"rol\": \"ADMIN_ROLE\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/usuarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/usuarios",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\": \"cesar vargas\",\n    \"password\": \"123456\",\n    \"correo\": \"cesara.vargas1990@gmail.com\",\n    \"rol\": \"ADMIN_ROLE\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/usuarios/653c3cc8561df834bd36068d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"usuarios",
+						"653c3cc8561df834bd36068d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/usuarios",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NTVkMTFiMjY3ZmE0YTBjMzA3YWJmYWEiLCJpYXQiOjE3MDA2MDA0NzEsImV4cCI6MTcwMDYxNDg3MX0.W8dmCeuUYkZ2o9ICUgG9VNOlAn1r_JK4Vcq8mQnPOvE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NTVkMTFiMjY3ZmE0YTBjMzA3YWJmYWEiLCJpYXQiOjE3MDA2MDA0NzEsImV4cCI6MTcwMDYxNDg3MX0.W8dmCeuUYkZ2o9ICUgG9VNOlAn1r_JK4Vcq8mQnPOvE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/usuarios/653c3cc8561df834bd36068d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"usuarios",
+						"653c3cc8561df834bd36068d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/auth/google",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/119.0"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br"
+					},
+					{
+						"key": "Referer",
+						"value": "http://localhost:8080/"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Origin",
+						"value": "http://localhost:8080"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "g_state={\"i_l\":0}; G_ENABLED_IDPS=google; G_AUTHUSER_H=0"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id_token\":\"eyJhbGciOiJSUzI1NiIsImtpZCI6IjBlNzJkYTFkZjUwMWNhNmY3NTZiZjEwM2ZkN2M3MjAyOTQ3NzI1MDYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIxMDIzOTE2MDI4OTIzLW1ubjA2N2xjam4zaXRycjBsbzhvajFzMDdrZGRncmNqLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiMTAyMzkxNjAyODkyMy1tbm4wNjdsY2puM2l0cnIwbG84b2oxczA3a2RkZ3Jjai5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsInN1YiI6IjExMTk2MTcwNTIzNTAzOTY4ODIyNSIsImVtYWlsIjoiY2VzYXJhLnZhcmdhczE5OTBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5iZiI6MTcwMDYwMzEwMiwibmFtZSI6ImNlc2FyIGF1Z3VzdG8gdmFyZ2FzIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0xtQk4tTERvb3FJWlJxbkRSdG9ESTFhaVdwamMwWElGc3FKMXNqbHV4dz1zOTYtYyIsImdpdmVuX25hbWUiOiJjZXNhciBhdWd1c3RvIiwiZmFtaWx5X25hbWUiOiJ2YXJnYXMiLCJsb2NhbGUiOiJlcyIsImlhdCI6MTcwMDYwMzQwMiwiZXhwIjoxNzAwNjA3MDAyLCJqdGkiOiIyNTE5ZmFkMzliOGFjYjNiMDBkMjllZWRjNzhiOGNlNzFjNzc2NDA1In0.Es6yl9N6v_RiHwdlmAsy6QqcvXza6z6mHuJbGpjZHVxI0izeYcRuyrRGd7pljX3PVSUlcWtdFlKAp87wKypLltfUUkkuzR-Js6-vIE_cON56vsFyiL-W3d43-v6kfi6t4bwqfv-mCgSUyeXtCU6qnx5NpDawq7lQsiSckivbw6_Sk6vE_eP1uioe_y7-6OxYqLRHzBSmJ5oasWkwe8OvyGEFL493AJdv_tEhgM21w1MPkXpA7Wbn6yQgvnvfOG5VuQQiZvFxio2glX52OfnE8wIUSH3UCCVq3wmjnzAZeg4fLa7NyC9oe6wdzUjTX1NOu_86LiXP2XkPs0cFPG5I0A\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/auth/google",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"google"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
